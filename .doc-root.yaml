@@ -1,0 +1,8 @@
+syntax: XML
+lfs:
+  auto: true
+  exclude: []
+supportedLanguages: []
+properties: []
+title: Информатика 8 класс
+description: курс
