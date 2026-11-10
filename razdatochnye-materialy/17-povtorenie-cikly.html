@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 17 · Алгоритмическая конструкция «повторение»</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Алгоритмическая конструкция «повторение»</h1><div class="sub">Информатика · 8 класс · урок 17 · Исполнители и алгоритмы</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 3</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Сколько раз выполнится тело</h3>
+<p class="q">Определите число выполнений тела цикла: а) «нц 7 раз … кц»; б) i := 1; нц пока i &lt;= 12: тело; i := i + 3; кц; в) i := 20; нц пока i &lt; 10: тело; кц; г) цикл «повторять … до условие», где условие истинно уже при первом входе.</p>
+<div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Сократить запись</h3>
+<p class="q">Робот должен закрасить 30 клеток коридора, двигаясь слева направо. Линейная запись содержит 59 команд. Запишите алгоритм с циклом и объясните, почему команда «вправо» внутри цикла выполняется 29 раз, а не 30.</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Трассировка суммы</h3>
+<p class="q">Выполните алгоритм по шагам и заполните таблицу значений: s := 0; нц для i от 1 до 6: s := s + 2 * i; кц; вывод s. Укажите значение s после каждого повторения и итог.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 4. Найдите ошибку</h3>
+<p class="q">Ученик написал: s := 0; i := 1; нц пока i &lt;= 10: s := s + i; кц; вывод s. Программа не выводит результат. В чём причина и как исправить?</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 17 «Алгоритмическая конструкция «повторение»»</span><span>задания 1–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Алгоритмическая конструкция «повторение»</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 2 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Циклический алгоритм</b> — алгоритм, в котором одна и та же последовательность команд выполняется несколько раз подряд.</div>
+<div class="def"><b>Тело цикла</b> — команды, которые повторяются при каждом выполнении цикла.</div>
+<div class="def"><b>Цикл с заданным числом повторений</b> — цикл, в котором количество выполнений тела известно заранее и указано в записи алгоритма.</div>
+<div class="def"><b>Цикл с предусловием</b> — цикл, в котором условие проверяется перед выполнением тела, поэтому тело может не выполниться ни разу.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Среда</th><th>Запись цикла</th><th>Чем задано число повторений</th></tr>
+<tr><td>КуМир</td><td>нц 12 раз … кц</td><td>числом в заголовке</td></tr>
+<tr><td>Python</td><td>for i in range(12):</td><td>длиной диапазона</td></tr>
+<tr><td>Scratch</td><td>повторить 12</td><td>числом в блоке</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ЦИКЛ (ПОВТОРЕНИЕ)
+Зачем: одинаковые команды записываем ОДИН раз
+Тело цикла - команды, которые повторяются
+Без правила выхода цикл не остановится
+
+ВИДЫ
+1) со счётчиком        2) с предусловием     3) с постусловием
+   нц 12 раз ... кц       нц пока &lt;усл&gt; ... кц    повторять ... до &lt;усл&gt;
+   for i in range(12)     while &lt;усл&gt;:            тело, затем проверка
+   проверки нет           проверка ДО тела        проверка ПОСЛЕ тела
+   ровно N раз            0 или больше раз        минимум 1 раз
+
+СЧЁТЧИК:  нц для i от 1 до n   (шаг по умолчанию 1)
+АККУМУЛЯТОР: s := 0;  тело: s := s + i;  вывод s
+
+БЛОК-СХЕМА: ромб-условие + стрелка возврата ВВЕРХ</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Что называют циклом в алгоритме?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> Что такое тело цикла?</p>
+<div class="foot"><span>Справочная страница · урок 17</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 17 · Алгоритмическая конструкция «повторение»</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 3 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> а) 7; б) 4 (значения i: 1, 4, 7, 10); в) 0, условие ложно сразу; г) 1, проверка идёт после тела.</p>
+<p class="tkey"><b>Задание 2.</b> нц 29 раз: закрасить; вправо; кц, затем закрасить. Клеток 30, но шагов между ними 29: после закрашивания последней клетки идти некуда, команда «вправо» была бы отказом. Исполняется 59 команд, а в записи 5 строк.</p>
+<p class="tkey"><b>Задание 3.</b> s: 2, 6, 12, 20, 30, 42. Итог s = 42, тело выполнилось 6 раз.</p>
+<p class="tkey"><b>Задание 4.</b> В теле не изменяется переменная i, поэтому условие i &lt;= 10 всегда истинно — бесконечный цикл. Нужно добавить в тело команду i := i + 1; тогда тело выполнится 10 раз и будет выведено 55.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>б</b></td><td><b>в</b></td><td><b>в</b></td><td><b>в</b></td><td><b>в</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Выучить определения: цикл, тело цикла, цикл с предусловием, цикл с постусловием, переменная цикла.</p>
+<p class="tkey"><b>2.</b> Записать в тетрадь алгоритм для Робота, который закрашивает коридор из 1, 2 и 5 клеток, и объяснить, почему для одной клетки цикл «нц 0 раз» не нужен.</p>
+<p class="tkey"><b>3.</b> Составить таблицу значений переменных для алгоритма из задания 3 и проверить по ней итоговую сумму.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Придумать задачу из жизни, где число повторений заранее неизвестно, и записать её решение в виде цикла «пока».</p>
+<div class="foot"><span>Ключи · урок 17 «Алгоритмическая конструкция «повторение»»</span><span>Следующий урок: Формальное исполнение алгоритма</span></div>
+</div>
+</body></html>

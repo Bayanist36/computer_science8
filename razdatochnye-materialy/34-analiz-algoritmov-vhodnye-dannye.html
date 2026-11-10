@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 34 · Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату</h1><div class="sub">Информатика · 8 класс · урок 34 · Анализ алгоритмов</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 3</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Обратный ход</h3>
+<p class="q">Программа</p>
+<p>a = int(input())</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Деление нацело</h3>
+<p class="q">Программа</p>
+<p>a = int(input())</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Две ветви</h3>
+<p class="q">Программа</p>
+<p>x = int(input())</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 4. Счётчик итераций как результат</h3>
+<p class="q">Программа</p>
+<p>n = int(input())</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 34 «Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату»</span><span>задания 1–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 2 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Обратная задача анализа алгоритма</b> — задача, в которой по известному результату работы алгоритма требуется найти входные данные, при которых этот результат получается.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Операция</th><th>Обратное действие</th><th>Сколько решений</th></tr>
+<tr><td>a = a + 7</td><td>вычесть 7</td><td>одно</td></tr>
+<tr><td>a = a * 3</td><td>разделить на 3</td><td>одно, если делится нацело</td></tr>
+<tr><td>a = a // 2</td><td>взять 2a и 2a + 1</td><td>два</td></tr>
+<tr><td>a = a % 10</td><td>восстановить нельзя</td><td>бесконечно много</td></tr>
+<tr><td>a = -a</td><td>взять противоположное</td><td>одно</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ОБРАТНАЯ ЗАДАЧА: ДАН РЕЗУЛЬТАТ, НАЙТИ ВХОД
+
+ПРЯМАЯ:   вход ---&gt; программа ---&gt; выход
+ОБРАТНАЯ: вход &lt;--- обратный ход &lt;--- выход
+
+ОБРАТИМОСТЬ ОПЕРАЦИЙ
+  +7      -7                    одно решение
+  *3      /3 (если делится)     одно решение
+  //2     2a, 2a+1              два решения
+  %10     восстановить нельзя   бесконечно много
+
+ОБРАТНЫЙ ХОД = СИСТЕМА УРАВНЕНИЙ С КОНЦА
+  a*3 -&gt; a+4 -&gt; a//2 = 20
+  a//2=20 -&gt; 40,41 -&gt; -4 -&gt; 36,37 -&gt; /3 -&gt; a = 12
+
+ВЕТВЛЕНИЕ: своё уравнение на каждую ветвь</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Чем обратная задача анализа алгоритма отличается от прямой?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> Почему уравнение b // 2 = 20 имеет два решения, а b / 2 = 20</p>
+<div class="foot"><span>Справочная страница · урок 34</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 34 · Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 3 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> Идём с конца: перед умножением на 2 было 15, потому что 15 · 2 = 30. Перед прибавлением семи было 15 − 7 = 8. Проверка: 8 + 7 = 15, 15 · 2 = 30. Ответ: 8, решение единственное, так как обе операции обратимы однозначно.</p>
+<p class="tkey"><b>Задание 2.</b> Перед вычитанием двойки было 6. Значит, a // 3 = 6, откуда a равно 18, 19 или 20: все три числа при делении на 3 нацело дают 6. Проверка: 18 // 3 − 2 = 4, 19 // 3 − 2 = 4, 20 // 3 − 2 = 4; для 21 получается 5. Ответ: 18, 19, 20.</p>
+<p class="tkey"><b>Задание 3.</b> Первая ветвь: x − 4 = 12, значит, x = 16; условие 16 &gt; 10 истинно, решение подходит. Вторая ветвь: x + 8 = 12, значит, x = 4; условие 4 &gt; 10 ложно, значит, ветвь else действительно выбрана, решение подходит. Других вариантов нет. Ответ: 16 и 4.</p>
+<p class="tkey"><b>Задание 4.</b> Один обратный шаг от значения 1 даёт промежуток от 2 до 3, второй — от 4 до 7, третий — от 8 до 15, четвёртый — от 16 до 31. Проверка границ: 16 → 8 → 4 → 2 → 1, четыре итерации; 31 → 15 → 7 → 3 → 1, тоже четыре. Для 15 итераций три, для 32 — пять. Ответ: любое n от 16 до 31, всего 16 значений.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>в</b></td><td><b>б</b></td><td><b>б</b></td><td><b>в</b></td><td><b>б</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Решить обратную задачу для программы: a = int(input()); a = a - 3; a = a * 4; a = a + 6; print(a) — при выводе 26 найти вход и выполнить проверку.</p>
+<p class="tkey"><b>2.</b> Для программы из задания 4 определить все n, дающие k = 5, и объяснить, почему значений стало вдвое больше.</p>
+<p class="tkey"><b>3.</b> Придумать программу из трёх присваиваний, у которой обратная задача имеет ровно два решения, и доказать, что третьего нет.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Написать программу полного перебора, которая для любого результата от 1 до 20 находит все двузначные входы программы из задания 5, и построить таблицу «результат — количество решений».</p>
+<div class="foot"><span>Ключи · урок 34 «Анализ алгоритмов. Определение возможных входных данных, приводящих к данному результату»</span><span>Итоговый урок</span></div>
+</div>
+</body></html>

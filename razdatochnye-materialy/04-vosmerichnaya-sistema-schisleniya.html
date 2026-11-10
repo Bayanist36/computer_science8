@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 4 · Восьмеричная система счисления</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Восьмеричная система счисления</h1><div class="sub">Информатика · 8 класс · урок 4 · Системы счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 3</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Таблица триад</h3>
+<p class="q">Заполните таблицу: поставьте в соответствие каждой восьмеричной цифре от 0 до 7 её трёхразрядный двоичный код. Затем запишите по триадам числа 34₈ и 607₈ в двоичной системе.</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Перевод из восьмеричной в двоичную</h3>
+<p class="q">Переведите в двоичную систему числа: а) 274₈; б) 753₈; в) 102₈.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Перевод из двоичной в восьмеричную</h3>
+<p class="q">Переведите в восьмеричную систему числа: а) 1011011₂; б) 100111₂; в) 11001₂.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 4. Десятичное число в восьмеричную систему</h3>
+<p class="q">Запишите число 2024 в восьмеричной системе делением на 8 и проверьте результат развёрнутой формой.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 4 «Восьмеричная система счисления»</span><span>задания 1–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Восьмеричная система счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 2 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Восьмеричная система счисления</b> — позиционная система счисления с основанием 8, в которой используются цифры от 0 до 7.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Номер разряда</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th></tr>
+<tr><td>Вес, 8 в степени</td><td>1</td><td>8</td><td>64</td><td>512</td><td>4096</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ВОСЬМЕРИЧНАЯ СИСТЕМА: основание 8, цифры 0..7
+веса: 1  8  64  512  4096
+ключ: 8 = 2^3  -&gt;  одна цифра = ТРИ двоичных разряда
+
+ТРИАДЫ
+ 0=000  1=001  2=010  3=011
+ 4=100  5=101  6=110  7=111
+
+8 -&gt; 2: заменить каждую цифру триадой
+  745(8) -&gt; 111 100 101 -&gt; 111100101(2)
+2 -&gt; 8: разбить СПРАВА налево на тройки, слева дополнить нулями
+  101101110(2) -&gt; 101 101 110 -&gt; 556(8)
+  10111(2)     -&gt; 010 111     -&gt; 27(8)
+
+8 -&gt; 10: развернуть по весам
+  556(8) = 5*64 + 5*8 + 6 = 366</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Какие цифры входят в алфавит восьмеричной системы?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> Почему между восьмеричной и двоичной системами существует простой перевод?</p>
+<div class="foot"><span>Справочная страница · урок 4</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 4 · Восьмеричная система счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 3 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> 0 — 000, 1 — 001, 2 — 010, 3 — 011, 4 — 100, 5 — 101, 6 — 110, 7 — 111. 34₈ = 011 100 = 11100₂; 607₈ = 110 000 111 = 110000111₂.</p>
+<p class="tkey"><b>Задание 2.</b> а) 010 111 100 = 10111100₂; б) 111 101 011 = 111101011₂; в) 001 000 010 = 1000010₂.</p>
+<p class="tkey"><b>Задание 3.</b> а) 001 011 011 = 133₈ (91 в десятичной); б) 100 111 = 47₈ (39); в) 011 001 = 31₈ (25).</p>
+<p class="tkey"><b>Задание 4.</b> 2024 : 8 = 253 (остаток 0); 253 : 8 = 31 (5); 31 : 8 = 3 (7); 3 : 8 = 0 (3). Читаем снизу вверх: 3750₈. Проверка: 3·512 + 7·64 + 5·8 + 0 = 1536 + 448 + 40 = 2024.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>в</b></td><td><b>б</b></td><td><b>в</b></td><td><b>б</b></td><td><b>в</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Выучить таблицу триад и веса разрядов восьмеричной системы до 4096.</p>
+<p class="tkey"><b>2.</b> Перевести в двоичную и десятичную системы числа 52₈, 316₈, 777₈.</p>
+<p class="tkey"><b>3.</b> Перевести в восьмеричную систему числа 45₁₀ и 100111₂; проверить оба ответа вторым способом.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Подготовить короткое сообщение о том, как записываются права доступа к файлам в Linux, и разобрать два примера восьмеричных кодов.</p>
+<div class="foot"><span>Ключи · урок 4 «Восьмеричная система счисления»</span><span>Следующий урок: Шестнадцатеричная система счисления</span></div>
+</div>
+</body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 8 · Логические операции «и», «или», «не»</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Логические операции «и», «или», «не»</h1><div class="sub">Информатика · 8 класс · урок 8 · Элементы математической логики</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 4</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Вычислите по значениям</h3>
+<p class="q">Даны высказывания: A — «Число 12 чётное», B — «Число 12 делится на 5», C — «Число 12 больше 10». Определите значения A, B, C и вычислите: 1) A ∧ B; 2) A ∨ B; 3) B ∧ C; 4) A ∧ C; 5) ¬B; 6) A ∧ ¬B; 7) B ∨ C; 8) ¬A ∨ B.</p>
+<div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Таблицы трёх операций</h3>
+<p class="q">Заполните таблицы истинности для выражений A ∧ B, A ∨ B и ¬A. Строки берите в порядке 00, 01, 10, 11.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Запись на языке логики</h3>
+<p class="q">Запишите в виде логического выражения: а) «Число x положительное и меньше 100»; б) «Ученик изучает английский или французский язык»; в) «Неверно, что температура выше нуля»; г) «Число делится на 3 и на 5, но не делится на 7»;</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 8 «Логические операции «и», «или», «не»»</span><span>задания 1–3</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Логические операции «и», «или», «не» · продолжение</h1><div class="sub">Информатика · 8 класс · урок 8 · Элементы математической логики</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 2 из 4</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<div class="task"><h3>Задание 4. Обратная задача</h3>
+<p class="q">При каких значениях A и B истинны равенства: 1) A ∧ B = 1; 2) ¬A ∧ B = 1; 3) A ∨ ¬B = 0? И при каких значениях A ∨ B = 0?</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 8 «Логические операции «и», «или», «не»»</span><span>задания 4–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Логические операции «и», «или», «не»</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 3 из 4</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Логическая операция</b> — правило, по которому из одного или нескольких высказываний строится новое высказывание, значение которого однозначно определяется значениями исходных высказываний.</div>
+<div class="def"><b>Конъюнкция</b> — логическая операция, которая истинна тогда и только тогда, когда истинны оба входящих в неё высказывания.</div>
+<div class="def"><b>Дизъюнкция</b> — логическая операция, которая ложна тогда и только тогда, когда ложны оба входящих в неё высказывания.</div>
+<div class="def"><b>Отрицание</b> — логическая операция, которая ставит в соответствие высказыванию новое высказывание с противоположным значением истинности.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Операция</th><th>Название</th><th>Обозначение</th><th>Связка в речи</th><th>Операндов</th></tr>
+<tr><td>«И»</td><td>Конъюнкция (умножение)</td><td>∧ или &amp;</td><td>«и», «а также», «но»</td><td>2</td></tr>
+<tr><td>«ИЛИ»</td><td>Дизъюнкция (сложение)</td><td>∨</td><td>«или»</td><td>2</td></tr>
+<tr><td>«НЕ»</td><td>Отрицание (инверсия)</td><td>¬</td><td>«не», «неверно, что»</td><td>1</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ЛОГИЧЕСКИЕ ОПЕРАЦИИ
+
+  И   (конъюнкция)  A ∧ B   истинна, если ИСТИННЫ ОБА
+  ИЛИ (дизъюнкция)  A ∨ B   ложна, если ЛОЖНЫ ОБА
+  НЕ  (отрицание)   ¬A      переворачивает значение
+
+     A B | A∧B  A∨B          A | ¬A
+     0 0 |  0    0           0 | 1
+     0 1 |  0    1           1 | 0
+     1 0 |  0    1
+     1 1 |  1    1
+
+  СВОЙСТВА:  A ∧ 0 = 0     A ∧ 1 = A
+             A ∨ 0 = A     A ∨ 1 = 1
+             A ∧ ¬A = 0    A ∨ ¬A = 1    ¬(¬A) = A
+</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Что называют логической операцией?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> При каких значениях A и B истинна конъюнкция?</p>
+<div class="foot"><span>Справочная страница · урок 8</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 8 · Логические операции «и», «или», «не»</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 4 из 4</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> A = 1, B = 0, C = 1. 1) 0; 2) 1; 3) 0; 4) 1; 5) 1; 6) 1; 7) 1; 8) 0∨0 = 0.</p>
+<p class="tkey"><b>Задание 2.</b> A ∧ B: 0, 0, 0, 1. A ∨ B: 0, 1, 1, 1. ¬A: 1, 1, 0, 0 (значение зависит только от A, поэтому в строках с одинаковым A оно повторяется).</p>
+<p class="tkey"><b>Задание 3.</b> а) A ∧ B; б) C ∨ D; в) ¬E; г) A ∧ B ∧ ¬C, где A — «делится на 3», B — «делится на 5», C — «делится на 7»; д) F ∨ G. В пункте «в» отрицание относится ко всему высказыванию E, отдельные скобки не нужны.</p>
+<p class="tkey"><b>Задание 4.</b> 1) A = 1, B = 1 — конъюнкция истинна только при двух единицах. 2) A = 0, B = 1 — нужно ¬A = 1, то есть A = 0, и B = 1. 3) A = 0, B = 1 — дизъюнкция ложна только при двух нулях, значит A = 0 и ¬B = 0, то есть B = 1. A ∨ B = 0 при A = 0, B = 0.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>б</b></td><td><b>б</b></td><td><b>б</b></td><td><b>б</b></td><td><b>в</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Выучить определения конъюнкции, дизъюнкции и отрицания, а также их таблицы истинности.</p>
+<p class="tkey"><b>2.</b> Даны A = 0, B = 1, C = 0. Вычислить: а) A ∧ B; б) A ∨ B; в) ¬A ∧ C; г) B ∨ ¬C; д) ¬(A ∨ B).</p>
+<p class="tkey"><b>3.</b> Привести по одному примеру из повседневной жизни на каждую операцию и записать эти примеры в виде логических выражений.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Подготовить короткое сообщение (4–5 предложений) о том, почему в поисковых запросах удобно использовать И, ИЛИ и НЕ, и привести примеры двух запросов с разным смыслом.</p>
+<div class="foot"><span>Ключи · урок 8 «Логические операции «и», «или», «не»»</span><span>Следующий урок: Определение истинности составного высказывания</span></div>
+</div>
+</body></html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 27 · Диалоговая отладка программ</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Диалоговая отладка программ</h1><div class="sub">Информатика · 8 класс · урок 27 · Язык программирования</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 3</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Определите вид ошибки</h3>
+<p class="q">Для каждого случая назовите вид ошибки и объясните, как вы это поняли.</p>
+<p>а) <code>print("Привет"</code> — не закрыта скобка.</p>
+<div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Найдите логическую ошибку в поиске максимума</h3>
+<p class="q">Программа должна выводить наибольшее из введённых чисел, но для набора −5, −2, −9 выдаёт 0. Код: <code>mx = 0</code>, затем <code>x = int(input())</code>, проверка <code>if x &gt; mx: mx = x</code> и вывод <code>print(mx)</code>.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Заполните таблицу состояний</h3>
+<p class="q">Заполните таблицу для программы при a = 12 и b = 5: значения переменных после каждой строки и вывод. Код: <code>a = 12</code>, <code>b = 5</code>, затем цепочка <code>if a % b == 0</code> — вывод «делится», <code>elif a % b == 2</code> — «остаток 2», <code>else</code> — «другой остаток».</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 4. Работа за компьютером: отладчик</h3>
+<p class="q">Откройте среду Python и включите отладчик (в IDLE — меню Debug → Debugger). Загрузите программу из примера 3, поставьте точку останова на строке с <code>if</code> и выполните её по шагам.</p>
+<div class="lines"><div></div><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 27 «Диалоговая отладка программ»</span><span>задания 1–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Диалоговая отладка программ</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 2 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Отладка</b> — процесс поиска и устранения ошибок в программе.</div>
+<div class="def"><b>Диалоговая отладка</b> — выполнение программы под управлением отладчика, при котором программист останавливает её в выбранных местах, выполняет по шагам и наблюдает текущие значения переменных.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Вид ошибки</th><th>Когда обнаруживается</th><th>Типичный пример</th></tr>
+<tr><td>Синтаксическая</td><td>до запуска, интерпретатор не начинает работу</td><td>нет двоеточия после условия</td></tr>
+<tr><td>Времени выполнения</td><td>в момент выполнения на конкретных данных</td><td>int("пять") или деление на 0</td></tr>
+<tr><td>Логическая</td><td>после запуска, по неверному результату</td><td>перепутаны ветки или знак сравнения</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ОТЛАДКА: три вида ошибок
+  синтаксис  -&gt; не запускается, есть номер строки
+  выполнение -&gt; падает на данных (ValueError, ZeroDivision)
+  логика     -&gt; работает, но ответ неверный
+
+ДИАЛОГОВАЯ ОТЛАДКА
+  точка останова ---&gt; программа стоит на строке
+  шаг с заходом ----&gt; одна строка, внутрь функции
+  шаг без захода ---&gt; строка целиком
+  продолжить -------&gt; до следующей остановки
+  окно переменных --&gt; значения СЕЙЧАС
+
+ОТЛАДОЧНЫЙ ВЫВОД
+  print("отладка:", x) - метка нужна, убрать перед сдачей
+
+ПОИСК: ожидаемое vs фактическое</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Какие три вида ошибок встречаются в программах?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> Чем логическая ошибка опаснее синтаксической?</p>
+<div class="foot"><span>Справочная страница · урок 27</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 27 · Диалоговая отладка программ</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 3 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> а) синтаксическая: до запуска, есть номер строки; б) времени выполнения: ValueError на конкретных данных; в) логическая: программа работает, но результат неверный; г) синтаксическая: отсутствует обязательное двоеточие.</p>
+<p class="tkey"><b>Задание 2.</b> Начальное значение mx = 0 неверно: оно заведомо больше всех отрицательных чисел, поэтому ни одно не становится максимумом. Начинать нужно с первого введённого числа: mx = int(input()), а затем сравнивать с остальными. Для набора −5, −2, −9 правильный ответ −2.</p>
+<p class="tkey"><b>Задание 3.</b> a = 12, b = 5; a % b = 2; первое условие 2 == 0 ложно; второе условие 2 == 2 истинно; вывод «остаток 2». Третья ветка не проверяется.</p>
+<p class="tkey"><b>Задание 4.</b> Ожидаемая запись: a = 8, b = 3; a // b = 2; условие 2 &gt; 2 ложно; выполняется ветка else; b = 3 − 8 = −5; вывод <code>8 -5</code>. Если в окне отладчика видно другое значение a // b, значит, точка останова стоит после изменения переменных — её нужно перенести выше.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>в</b></td><td><b>б</b></td><td><b>в</b></td><td><b>в</b></td><td><b>б</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Выписать в тетрадь по одному примеру синтаксической, логической ошибки и ошибки времени выполнения, для каждой указать способ обнаружения.</p>
+<p class="tkey"><b>2.</b> Найти и исправить ошибку в программе: <code>mx = 0</code>, затем ввод и сравнение — так, чтобы она работала и для отрицательных чисел.</p>
+<p class="tkey"><b>3.</b> Составить таблицу состояний для программы из примера 2 при x = 7 и x = 8.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Добавить в любую свою программу отладочные выводы с метками, найти с их помощью ошибку, затем убрать выводы и записать, что показала отладка.</p>
+<div class="foot"><span>Ключи · урок 27 «Диалоговая отладка программ»</span><span>Следующий урок: Цикл с условием</span></div>
+</div>
+</body></html>

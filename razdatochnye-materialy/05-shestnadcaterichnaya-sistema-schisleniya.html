@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Раздаточный материал · Урок 5 · Шестнадцатеричная система счисления</title>
+<style>
+@page{size:A4 portrait;margin:12mm 13mm 10mm}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#fff;color:#141824;
+  font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;font-size:10.5pt;line-height:1.38}
+.page{page-break-after:always;width:184mm;display:flex;flex-direction:column;min-height:262mm}
+.page:last-child{page-break-after:auto}
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  border-bottom:2px solid #4F46E5;padding-bottom:5px;margin-bottom:9px}
+.head h1{font-size:15pt;margin:0;font-weight:700;letter-spacing:-.2px}
+.head .sub{font-size:9pt;color:#5A6178;margin-top:2px}
+.head .mark{font-size:8.6pt;color:#5A6178;text-align:right;line-height:1.35}
+.name{display:flex;gap:14px;font-size:9pt;color:#5A6178;margin:0 0 9px}
+.name span{flex:1;border-bottom:1px dotted #9AA0B4;padding-bottom:1px}
+h2.sec{font-size:11.5pt;margin:7px 0 4px;font-weight:700;color:#1E2A5A}
+h2.sec .n{display:inline-flex;width:6.4mm;height:6.4mm;border-radius:50%;background:#4F46E5;color:#fff;
+  font-size:8.6pt;align-items:center;justify-content:center;margin-right:6px;vertical-align:1px}
+.hint{font-size:8.8pt;color:#5A6178;margin:0 0 5px}
+.task{border:1px solid #D6D9E6;border-radius:7px;padding:3mm 3.6mm 2mm;margin-bottom:2.4mm;background:#FCFCFE}
+.task h3{font-size:9.6pt;margin:0 0 1.6mm;font-weight:700;color:#141824;line-height:1.2}
+.task p{margin:0 0 1.2mm;font-size:9.1pt;line-height:1.3}
+.task .q{background:#F0F1FA;border-left:3px solid #4F46E5;padding:1.5mm 2.2mm;border-radius:0 4px 4px 0;margin-bottom:1.4mm}
+.lines div{border-bottom:1px solid #C7CBDA;height:5.6mm}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3mm}
+.def{border-left:3px solid #4F46E5;background:#F4F5FC;padding:2mm 3mm;margin-bottom:2mm;font-size:9.6pt;border-radius:0 4px 4px 0}
+.def b{color:#1E2A5A}
+table.k{width:100%;border-collapse:collapse;font-size:9.2pt}
+table.k th{background:#EEF0FA;text-align:left;padding:1.6mm 2mm;border:1px solid #D6D9E6;font-weight:700;color:#1E2A5A}
+table.k td{padding:1.5mm 2mm;border:1px solid #D6D9E6;vertical-align:top}
+pre{background:#F2F4FA;border:1px solid #D6D9E6;border-radius:5px;padding:2.4mm 3mm;font-size:8.4pt;
+  line-height:1.3;font-family:'Consolas','Courier New',monospace;white-space:pre-wrap;margin:0 0 2mm}
+.foot{margin-top:auto;padding-top:4mm;display:flex;justify-content:space-between;font-size:8.2pt;color:#8A90A6;
+  border-top:1px solid #E3E6F0}
+.tkey{font-size:9pt;color:#141824}
+.tkey b{color:#1E2A5A}
+.cut{font-size:8pt;color:#8A90A6;text-align:center;margin-top:2mm}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="head"><div><h1>Шестнадцатеричная система счисления</h1><div class="sub">Информатика · 8 класс · урок 5 · Системы счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>Раздаточный материал<br>лист 1 из 3</div></div>
+<div class="name"><span>ФИО</span><span>Класс 8 «___»</span><span>Дата</span></div>
+<p class="hint">Выполните задания письменно на этом листе. На работу отводится 20–25 минут. Черновики сдавать не нужно.</p>
+<div class="task"><h3>Задание 1. Алфавит и основание</h3>
+<p class="q">Определите, какие из записей могут быть числами в шестнадцатеричной системе: 19F, 1G5, BEE, 8A, 7FF, ABZ. Для каждой допустимой записи назовите её десятичное значение старшей цифры и объясните, почему остальные записи невозможны.</p>
+<div class="lines"><div></div><div></div><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 2. Из шестнадцатеричной в десятичную</h3>
+<p class="q">Переведите в десятичную систему: а) 1A₁₆; б) 10₁₆; в) FF₁₆; г) ABC₁₆.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 3. Из десятичной в шестнадцатеричную</h3>
+<p class="q">Запишите в шестнадцатеричной системе числа 255, 100, 4096 и 3000. Покажите цепочку делений для числа 3000.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="task"><h3>Задание 4. Тетрады в обе стороны</h3>
+<p class="q">Переведите в шестнадцатеричную систему двоичные числа 10101100₂, 111100001111₂ и 100000000₂. Затем выполните обратный перевод: 7E8₁₆, A5₁₆.</p>
+<div class="lines"><div></div><div></div><div></div></div></div>
+<div class="foot"><span>Информатика · 8 класс · урок 5 «Шестнадцатеричная система счисления»</span><span>задания 1–4</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Справочная страница</h1><div class="sub">Шестнадцатеричная система счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>можно использовать<br>при выполнении заданий<br>лист 2 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ключевые определения</h2>
+<div class="def"><b>Шестнадцатеричная система счисления</b> — позиционная система счисления с основанием 16, алфавит которой образуют цифры 0–9 и буквы A–F.</div>
+<h2 class="sec"><span class="n">2</span>Опорная таблица</h2>
+<table class="k"><tr><th>Цифра</th><th>Значение</th><th>Двоичный код</th></tr>
+<tr><td>0</td><td>0</td><td>0000</td></tr>
+<tr><td>1</td><td>1</td><td>0001</td></tr>
+<tr><td>2</td><td>2</td><td>0010</td></tr>
+<tr><td>3</td><td>3</td><td>0011</td></tr>
+<tr><td>4</td><td>4</td><td>0100</td></tr>
+</table>
+<h2 class="sec"><span class="n">3</span>Опорный конспект</h2>
+<pre style="font-size:7.4pt;line-height:1.22">ШЕСТНАДЦАТЕРИЧНАЯ СИСТЕМА СЧИСЛЕНИЯ
+
+основание 16      цифры: 0 1 2 3 4 5 6 7 8 9 A B C D E F
+A=10  B=11  C=12  D=13  E=14  F=15      (F = 16 - 1)
+
+16 = 2^4  -&gt;  одна цифра = 4 бита = ТЕТРАДА
+байт = 8 бит = 2 цифры          диапазон 00 ... FF (256)
+
+ПЕРЕВОД
+16 -&gt; 10:  2F5 = 2*256 + 15*16 + 5*1 = 757
+10 -&gt; 16:  делим на 16, остатки снизу вверх
+           1000: ост. 8 | 14(E) | 3  -&gt;  3E8
+2  -&gt; 16:  группы по 4 справа, слева добить нулями
+           11111101000 -&gt; 0111 1110 1000 -&gt; 7E8
+16 -&gt; 2:   каждая цифра -&gt; 4 бита
+8  &lt;-&gt; 16: только через двоичную (3 и 4 бита не совпадают)</pre>
+<h2 class="sec"><span class="n">4</span>Проверь себя</h2>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>1.</b> Что такое шестнадцатеричная система счисления?</p>
+<p style="margin:0 0 1.4mm;font-size:9.4pt"><b>2.</b> Чему равны буквы A–F в десятичной записи?</p>
+<div class="foot"><span>Справочная страница · урок 5</span><span>8 класс</span></div>
+</div>
+<div class="page">
+<div class="head"><div><h1>Ключи и критерии</h1><div class="sub">для учителя · урок 5 · Шестнадцатеричная система счисления</div></div><div class="mark">МБОУ «СОШ № 108»<br>не выдаётся<br>обучающимся<br>лист 3 из 3</div></div>
+<h2 class="sec"><span class="n">1</span>Ответы к заданиям</h2>
+<p class="tkey"><b>Задание 1.</b> Допустимы 19F, BEE, 8A, 7FF. 1G5 невозможна: буквы G в алфавите нет. ABZ невозможна: буквы Z нет. Старшие цифры: 1, B = 11, 8, 7. Максимальная цифра в допустимых записях — F = 15, значит, основание 16 подходит.</p>
+<p class="tkey"><b>Задание 2.</b> а) 1 · 16 + 10 = 26; б) 1 · 16 + 0 = 16; в) 15 · 16 + 15 = 255; г) 10 · 256 + 11 · 16 + 12 = 2560 + 176 + 12 = 2748.</p>
+<p class="tkey"><b>Задание 3.</b> 255 = FF; 100 = 64; 4096 = 1000; 3000 = BB8. Цепочка: 3000 : 16 = 187, остаток 8; 187 : 16 = 11, остаток 11 (B); 11 : 16 = 0, остаток 11 (B). Читаем снизу вверх: BB8. Проверка: 11 · 256 + 11 · 16 + 8 = 2816 + 176 + 8 = 3000.</p>
+<p class="tkey"><b>Задание 4.</b> 10101100 → 1010 1100 → AC. 111100001111 → 1111 0000 1111 → F0F. 100000000 → дополняем слева до 12 разрядов: 0001 0000 0000 → 100 (это 256). Обратно: 7E8 → 0111 1110 1000 → 11111101000; A5 → 1010 0101 → 10100101.</p>
+<h2 class="sec"><span class="n">2</span>Ответы к тесту (часть А)</h2>
+<table class="k"><tr><th>Вопрос</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+<tr><td>Ответ</td><td><b>в</b></td><td><b>в</b></td><td><b>в</b></td><td><b>в</b></td><td><b>а</b></td></tr></table>
+<h2 class="sec"><span class="n">3</span>Домашнее задание</h2>
+<p class="tkey"><b>1.</b> Выучить алфавит шестнадцатеричной системы и таблицу соответствия цифр A–F, их десятичных значений и тетрад.</p>
+<p class="tkey"><b>2.</b> Перевести в шестнадцатеричную систему числа 64, 200, 1023 и 4096; каждый результат проверить обратным переводом в десятичную.</p>
+<p class="tkey"><b>3.</b> Записать в тетрадь цвет любимого оттенка в формате #RRGGBB и расшифровать три его байта в десятичной системе.</p>
+<p class="tkey"><b>4.</b> *(По желанию)* Выяснить, как в Python записывают шестнадцатеричные числа и что делает функция hex(); проверить её работу на двух числах.</p>
+<div class="foot"><span>Ключи · урок 5 «Шестнадцатеричная система счисления»</span><span>Следующий урок: Обобщение и систематизация знаний по теме «Системы счисления»</span></div>
+</div>
+</body></html>
